@@ -1,0 +1,29 @@
+
+<div class="navish">The Seale Blog</div>
+
+<h1 class="newpost-tagline">Create a post and let EVERYBODY know!</h1>
+<div class="row">
+  <div class="col-dsk-4 col-tab-4 col-phb-4 col-phn-4">
+    <label for="titleText" class="title-text">Title:</label>
+    <plat-input type="text" class="title-holder" placeholder='Enter Post Title Here' plat-bind="blogpost.title"><plat-input>
+  </div>
+</div>
+    <!--actual content form-->
+ <!--<fieldset class="form-group">-->   
+<div class="row"> 
+   <div class="col-dsk-4 col-tab-4 col-phb-4 col-phn-4">   
+    <label for="exampleTextarea" class="write-about">Write about it:</label>
+    <textarea class="content-text" id="exampleTextarea" placeholder= 'Write your post here' rows="6" plat-bind='blogpost.content'></textarea>
+    </div>
+</div>
+
+<!--</fieldset>-->
+<div class="row"> 
+    <div class="col-dsk-6 col-tab-6 col-phb-4 col-phn-4">
+        <label for="authorInput" class="author-input">Author:</label>
+        <plat-input type="text" class='author-inbox' placeholder='Enter Your Name Here' plat-bind="blogpost.author"></plat-input>
+        <plat-button class="save-blogpost danger-neutral" plat-tap="savePost">Submit Post</plat-button>
+    </div>
+</div>
+
+<p>{{ error }}</p>

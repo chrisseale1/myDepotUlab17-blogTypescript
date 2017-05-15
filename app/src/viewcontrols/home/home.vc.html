@@ -1,0 +1,28 @@
+
+<div class="navish">The Seale Blog</div>
+<!--<div class=container>-->
+    <div class="row">
+        <div class="col-dsk-4 col-tab-4"></div>
+        <div class="col-dsk-4 col-tab-4">
+            <plat-button class= "button-danger create-post" plat-tap="goToNewPost">CREATE NEW POST</plat-button>
+            </div>
+        <div class="col-dsk-4 col-tab-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-dsk-2 col-tab-2 col-phb-2 col-phn-2"></div>
+        <div class="col-dsk-8 col-tab-8 col-phb-8 col-phn-8">
+            <p class="blurb">This is where the magic happens. You can write your own blogpost by clicking the "create new post" button above. You can create a single post, complete with your thoughts and it will show the date it was made and who authored it, allowing you to later edit the post or just delete it if you feel you're rambling and it all just isn't working out. Or, if you're in more of a reading mood, take a look at some of the past posts below from various blog contributors. There's something for everyone at the Seale Blog.</p>
+        </div>
+        <div class="col-dsk-2 col-tab-2 col-phb-2 col-phn-2"></div> 
+    </div>  
+
+    <!--<div class="list-container">-->
+        <div plat-control="plat-foreach" plat-context="blogPosts">
+            <!--<div class="blogpost">-->
+                <h2>{{ title }}</h2>
+                <h5>created by {{ author }}</h5>
+                <h5>{{ createdAt }}</h5>
+                <plat-link plat-options="{ view: @rootContext.singleVC, parameters: { id: id } }">Read More</plat-link>
+            <!--</div> -->
+        </div>
+<!--</div>-->

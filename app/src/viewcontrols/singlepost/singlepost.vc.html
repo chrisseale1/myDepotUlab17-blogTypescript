@@ -1,0 +1,8 @@
+
+<div class="navish">The Seale Blog</div>
+<h1>{{ post.title }}</h1>
+<p>{{ post.content }}</p>
+<h5>Post created by {{ post.author }}</h5>
+<h5>Posted at: {{ post.createdAt }}</h5>
+<plat-button class='button-neutral edit-blogpost' plat-bind='editBlogPost()'>edit post</plat-button>  <plat-button class='danger-neutral delete-blogpost' ng-click='deleteBlogPost()'>Delete Post</plat-button>
+<p>{{ id }}</p>
